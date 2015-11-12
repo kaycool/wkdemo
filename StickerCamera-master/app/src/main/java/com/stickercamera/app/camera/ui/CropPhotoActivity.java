@@ -47,7 +47,7 @@ public class CropPhotoActivity extends CameraBaseActivity {
     private Uri fileUri;
     private Bitmap oriBitmap;
     private int initWidth, initHeight;
-    private static final int MAX_WRAP_SIZE  = 2048;
+    private static final int MAX_WRAP_SIZE = 2048;
 
     @InjectView(R.id.crop_image)
     ImageViewTouch cropImage;
@@ -95,7 +95,9 @@ public class CropPhotoActivity extends CameraBaseActivity {
                         cropImage();
                     }
                     dismissProgressDialog();
-                };
+                }
+
+                ;
             }.start();
         });
     }
@@ -105,7 +107,7 @@ public class CropPhotoActivity extends CameraBaseActivity {
         int width = initWidth > initHeight ? initWidth : initHeight;
         int imageSize = width < MAX_WRAP_SIZE ? width : MAX_WRAP_SIZE;
 
-        int move =  (int)((initHeight - initWidth) / 2 / (float)width * (float)imageSize);
+        int move = (int) ((initHeight - initWidth) / 2 / (float) width * (float) imageSize);
         int moveX = initWidth < initHeight ? move : 0;
         int moveY = initHeight < initWidth ? -move : 0;
         Bitmap croppedImage = null;
