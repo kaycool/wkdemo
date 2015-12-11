@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\layout\\item_published_grida.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\layout\\item_published_grida.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\layout\\activity_photo.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\layout\\activity_photo.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\layout\\activity_selectimg.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\layout\\activity_selectimg.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\layout\\item_popupwindows.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\layout\\item_popupwindows.xml"
+    }
+]

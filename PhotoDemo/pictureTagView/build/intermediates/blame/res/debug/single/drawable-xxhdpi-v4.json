@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\bg_picturetagview_tagview_left.9.png",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\src\\main\\res\\drawable-xxhdpi\\bg_picturetagview_tagview_left.9.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\bg_test.jpg",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\src\\main\\res\\drawable-xxhdpi\\bg_test.jpg"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\bg_picturetagview_tagview_right.9.png",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\src\\main\\res\\drawable-xxhdpi\\bg_picturetagview_tagview_right.9.png"
+    }
+]

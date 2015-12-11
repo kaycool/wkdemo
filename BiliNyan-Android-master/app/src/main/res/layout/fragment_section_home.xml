@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.noties.scrollable.ScrollableLayout
+			 xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/scrollable"
+			 app:scrollable_defaultCloseUp="false"
+			 app:scrollable_closeUpAnimationMillis="0"
+			 app:scrollable_considerIdleMillis="0">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/appbar_parallax_max_height"
+		android:id="@+id/appbar_layout"
+		android:background="@color/toolbar_default_background_dark">
+
+		<android.support.v4.view.ViewPager
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/banner_pager"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="128dp"
+			android:layout_gravity="top"
+			android:background="@drawable/shadow_gradient"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="84dp"
+			android:layout_gravity="bottom"
+			android:background="@drawable/shadow_gradient_reserve"/>
+
+		<moe.feng.bilinyan.view.CircleProgressView
+			android:layout_width="@dimen/circle_progress_view_default_size"
+			android:layout_height="@dimen/circle_progress_view_default_size"
+			android:id="@+id/banner_loading_circle"
+			android:layout_gravity="center"
+			app:matProg_barColor="?attr/colorPrimary"
+			app:matProg_barWidth="@dimen/circle_progress_view_default_border_width"/>
+
+		<moe.feng.bilinyan.view.CircleIndicator
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/circle_indicator_default_height"
+			android:layout_gravity="bottom"
+			android:layout_marginStart="64dp"
+			android:layout_marginBottom="@dimen/appbar_tab_height"
+			android:visibility="invisible"
+			android:id="@+id/pager_indicator"/>
+
+		<moe.feng.material.statusbar.AppBarLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/appbar_background"
+			android:alpha="0"
+			app:colorNormal="@color/toolbar_default_background_dark"
+			app:colorDark="@color/toolbar_default_background_dark_darker"
+			app:enableElevation="false">
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/appbar_parallax_max_height"
+				android:background="@color/toolbar_default_background_dark"/>
+
+		</moe.feng.material.statusbar.AppBarLayout>
+
+		<moe.feng.bilinyan.view.SlidingTabLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/appbar_tab_height"
+			android:layout_gravity="bottom"
+			android:id="@+id/sliding_tabs"
+			android:background="@android:color/transparent"
+			app:paddingStart="16dp"
+			app:paddingEnd="16dp"/>
+
+	</FrameLayout>
+
+	<android.support.v4.view.ViewPager
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/tab_pager"/>
+
+</ru.noties.scrollable.ScrollableLayout>

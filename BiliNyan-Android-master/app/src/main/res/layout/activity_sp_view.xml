@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <moe.feng.material.statusbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_layout"
+	    app:colorNormal="@color/pink_500"
+	    app:colorDark="@color/pink_700"
+	    app:enableElevation="true">
+
+        <android.support.v7.widget.Toolbar
+	        android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+	        android:background="@android:color/transparent"
+            android:id="@+id/toolbar"
+	        app:theme="@style/ThemeOverlay.AppCompat"
+	        app:popupTheme="@style/ThemeOverlay.AppCompat"/>
+
+    </moe.feng.material.statusbar.AppBarLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:background="@color/background_floating_material_dark"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_width="120dp"
+			android:layout_height="80dp"
+			android:layout_margin="@dimen/sp_preview_padding"
+			android:id="@+id/sp_preview"
+			android:scaleType="centerCrop"
+			tools:src="@drawable/avatar_placeholder_empty"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingStart="@dimen/user_info_details_layout_horizontal_padding"
+			android:paddingEnd="@dimen/user_info_details_layout_horizontal_padding"
+			android:paddingTop="@dimen/user_info_details_layout_horizontal_padding"
+			android:orientation="vertical"
+			android:gravity="center_vertical">
+
+			<android.support.v7.widget.AppCompatTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingStart="@dimen/title_margin_small"
+				android:paddingEnd="@dimen/title_margin_small"
+				android:id="@+id/sp_title"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+				android:singleLine="true"
+				tools:text="Misaka Mikoto"/>
+
+			<Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+
+			<android.support.v7.widget.AppCompatTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingStart="@dimen/title_margin_small"
+				android:paddingEnd="@dimen/title_margin_small"
+				android:id="@+id/sp_last_update_at"
+				android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+				android:singleLine="true"
+				tools:text="Male"/>
+
+			<Space android:layout_width="match_parent" android:layout_height="4dp"/>
+
+			<android.support.v7.widget.AppCompatTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingStart="@dimen/title_margin_small"
+				android:paddingEnd="@dimen/title_margin_small"
+				android:id="@+id/sp_desc"
+				tools:text="Bilibilibilibilibilibili~"/>
+
+			<Space android:layout_width="match_parent" android:layout_height="8dp"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:paddingStart="@dimen/title_margin_small"
+				android:paddingEnd="@dimen/title_margin_small"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="@dimen/video_info_mini_icons_size"
+					android:layout_height="@dimen/video_info_mini_icons_size"
+					android:src="@drawable/ic_play_circle_outline_black_24dp"
+					android:tint="@android:color/white"
+					android:alpha="0.65"/>
+
+				<android.support.v7.widget.AppCompatTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/video_info_count_text_margin_start"
+					android:id="@+id/tv_play_time"
+					android:textSize="@dimen/video_info_mini_icons_size"/>
+
+				<Space android:layout_width="16dp" android:layout_height="match_parent"/>
+
+				<ImageView
+					android:layout_width="@dimen/video_info_mini_icons_size"
+					android:layout_height="@dimen/video_info_mini_icons_size"
+					android:src="@drawable/ic_subtitles_black_24dp"
+					android:tint="@android:color/white"
+					android:alpha="0.65"/>
+
+				<android.support.v7.widget.AppCompatTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/video_info_count_text_margin_start"
+					android:id="@+id/tv_video_count"
+					android:textSize="@dimen/video_info_mini_icons_size"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:id="@+id/refresh_layout">
+
+		<android.support.v7.widget.RecyclerView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/sp_video_list"/>
+
+	</android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

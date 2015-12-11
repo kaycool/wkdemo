@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clipToPadding="false"
+	android:id="@+id/scrollable">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<moe.feng.bilinyan.view.CircleProgressView
+			android:layout_width="@dimen/circle_progress_view_default_size"
+			android:layout_height="@dimen/circle_progress_view_default_size"
+			android:layout_marginTop="80dp"
+			android:layout_gravity="center_horizontal"
+			android:id="@+id/circle_progress"
+			app:matProg_barWidth="@dimen/circle_progress_view_default_border_width"
+			app:matProg_barColor="?attr/colorPrimary"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/container"
+			android:visibility="gone"
+			android:orientation="vertical">
+
+			<android.support.v7.widget.AppCompatTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/home_tab_recommend_title"
+				android:paddingTop="@dimen/activity_vertical_margin"
+				android:paddingBottom="@dimen/activity_vertical_margin"
+				android:paddingStart="@dimen/activity_horizontal_margin"
+				android:paddingEnd="@dimen/activity_horizontal_margin"
+				android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+			<!-- 啊 因为不解决 RecyclerView 在 ScrollView 中的滑动以及高度冲突问题 用了这个傻逼方法 -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/stupid_grid"
+				android:paddingStart="@dimen/list_item_vertical_margin_small"
+				android:paddingEnd="@dimen/list_item_vertical_margin_small"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="180dp"
+					android:orientation="horizontal"
+					android:baselineAligned="false">
+
+					<FrameLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="@dimen/card_margin"
+						android:layout_weight="1"
+						android:id="@+id/card_frame_0"/>
+
+					<FrameLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="@dimen/card_margin"
+						android:layout_weight="1"
+						android:id="@+id/card_frame_1"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="180dp"
+					android:orientation="horizontal"
+					android:baselineAligned="false">
+
+					<FrameLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="@dimen/card_margin"
+						android:layout_weight="1"
+						android:id="@+id/card_frame_2"/>
+
+					<FrameLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="@dimen/card_margin"
+						android:layout_weight="1"
+						android:id="@+id/card_frame_3"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="180dp"
+					android:orientation="horizontal"
+					android:baselineAligned="false">
+
+					<FrameLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="@dimen/card_margin"
+						android:layout_weight="1"
+						android:id="@+id/card_frame_4"/>
+
+					<FrameLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="@dimen/card_margin"
+						android:layout_weight="1"
+						android:id="@+id/card_frame_5"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<android.support.v7.widget.AppCompatTextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:paddingTop="@dimen/activity_vertical_margin"
+					android:paddingBottom="@dimen/activity_vertical_margin"
+					android:paddingStart="@dimen/activity_horizontal_margin"
+					android:paddingEnd="@dimen/activity_horizontal_margin"
+					android:text="@string/home_tab_recent_bangumi"
+					android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+				<android.support.v7.widget.AppCompatTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/activity_horizontal_margin"
+					android:layout_marginEnd="@dimen/activity_horizontal_margin"
+					android:id="@+id/btn_bangumi_more"
+					android:paddingTop="@dimen/activity_vertical_margin"
+					android:paddingBottom="@dimen/activity_vertical_margin"
+					android:paddingStart="@dimen/activity_horizontal_margin"
+					android:paddingEnd="@dimen/activity_horizontal_margin"
+					android:text="@string/home_tab_more"
+					android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+					android:textColor="@color/pink_500"
+					android:clickable="true"
+					android:background="?attr/selectableItemBackgroundBorderless"/>
+
+			</LinearLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:layout_width="match_parent"
+			    android:layout_height="@dimen/bangumi_horizontal_list_height"
+			    android:paddingStart="@dimen/title_margin_small"
+			    android:paddingEnd="@dimen/title_margin_small"
+			    android:clipToPadding="false"
+			    android:id="@+id/bangumi_list"/>
+
+			<Space android:layout_width="match_parent" android:layout_height="16dp"/>
+
+		</LinearLayout>
+
+	</FrameLayout>
+
+</ScrollView>

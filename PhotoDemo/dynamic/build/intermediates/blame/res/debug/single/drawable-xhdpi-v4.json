@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\icon_addpic_unfocused.png",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\drawable-xhdpi\\icon_addpic_unfocused.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bt_dynamic_del_focused.png",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\drawable-xhdpi\\bt_dynamic_del_focused.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bt_dynamic_del_unfocused.png",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\drawable-xhdpi\\bt_dynamic_del_unfocused.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PhotoDemo.iml" filepath="$PROJECT_DIR$/PhotoDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic/dynamic.iml" filepath="$PROJECT_DIR$/dynamic/dynamic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firstPage_template1/firstPage_template1.iml" filepath="$PROJECT_DIR$/firstPage_template1/firstPage_template1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageDemo/imageDemo.iml" filepath="$PROJECT_DIR$/imageDemo/imageDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoWallFallsDemo/photoWallFallsDemo.iml" filepath="$PROJECT_DIR$/photoWallFallsDemo/photoWallFallsDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pictureTagView/pictureTagView.iml" filepath="$PROJECT_DIR$/pictureTagView/pictureTagView.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+*.iml
+
+app/src/main/java/moe/feng/bilinyan/api/Secret.java

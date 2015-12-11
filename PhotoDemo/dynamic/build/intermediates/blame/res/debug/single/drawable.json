@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_nobgd_top_button_left_right_11.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\drawable\\bt_nobgd_top_button_left_right_11.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_nobgd.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\drawable\\bt_nobgd.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_dynamic_del.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\dynamic\\src\\main\\res\\drawable\\bt_dynamic_del.xml"
+    }
+]

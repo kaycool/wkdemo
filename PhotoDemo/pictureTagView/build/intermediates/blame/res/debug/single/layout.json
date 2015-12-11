@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\build\\intermediates\\res\\merged\\debug\\layout\\act_main.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\src\\main\\res\\layout\\act_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\build\\intermediates\\res\\merged\\debug\\layout\\picturetagview_right.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\src\\main\\res\\layout\\picturetagview_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\build\\intermediates\\res\\merged\\debug\\layout\\picturetagview.xml",
+        "source": "C:\\Users\\dell\\DemoProject\\PhotoDemo\\pictureTagView\\src\\main\\res\\layout\\picturetagview.xml"
+    }
+]
